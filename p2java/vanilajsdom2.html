@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 2 - Volume of a sphere</title>
+    </head> 
+    <body>
+        <p id ='text'>Input radius value and get the volume of a sphere</p> 
+        <div>
+ 
+		
+				
+<form class="row">
+	<div class="col-6">
+		<label for="inputRadius" class="form-label">Radius</label>
+		<br/>
+		<input type="number" class="form-control" id="inputRadius">
+	</div>
+		 <br/> 
+	<div class="col-6">
+		<label for="outputVolume" class="form-label">Volume</label>
+		<br/>
+		<input type="text" class="form-control" id="outputVolume">
+	</div>
+		  
+	<div class="d-grid gap-2">
+  <br>
+		<button class="btn btn-success" type="button" onclick = "calculateradius()">Calculate</button>
+	</div>
+</form>
+				
+        </div>
+				<script>
+				
+				function calculateradius(){
+				let x = document.getElementById("inputRadius").valueAsNumber;
+				console.log(x);
+				
+				//V=4/3πr3
+				
+				let r =(4/3) * Math.PI * Math.pow(x,3);//Calculation
+				console.log(r);
+				
+				document.getElementById("outputVolume").value = r; //answer in the box
+				}
+				
+				
+				
+				</script>
+		
+    </body>
+</html>
+	
+
+
+ 
+
+
+
+
+
+
+

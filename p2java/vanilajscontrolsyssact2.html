@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Activity 2</h1>
+<p>part 2</p>
+<p id="aa"></p>
+<p id="bb"></p>
+<p id="cc"></p>
+
+
+<script>
+// check order
+let a = parseInt( prompt("Enter a number: "));
+let b = parseInt( prompt("Enter a number: "));
+let c = parseInt(prompt("Enter a number: "));
+
+
+// check numbers are increasing
+if (a < b && b < c) {
+    console.log("increasing order");
+	document.getElementById("aa").innerHTML = "Increasing order";
+	
+}
+// check numbers are decreasing
+ else if (a > b && b > c) {
+      console.log("decreasing order ");
+	document.getElementById("bb").innerHTML = "Decreasing order";
+ 
+}
+
+else  {
+      console.log("Neither increasing or decreasing order");
+	document.getElementById("bb").innerHTML = "Neither increasing or decreasing order";
+ 
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

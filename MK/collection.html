@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MK TIME </title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark mb-1" style="background-color:#000000">
+  <div class="container-fluid">
+    <a class="navbar-brand" class = "nav-link active" href="index.html">MK TIME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+	<span class="navbar-text">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	  
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"><i class="bi-house-fill"></i> Home</a>
+        </li>
+      
+		<li class="nav-item">
+		  
+          <a class="nav-link active" href="collection.html"> Collection</a>
+        </li>
+      
+		
+	<div class="dropdown">
+  <a class="nav-link" href="servicing.html" class="btn btn-secondary dropdown-toggle" href="servicing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Servicing/Repairs
+  </a>
+
+  <ul class="dropdown-menu dropdown-menu-dark">
+    <li><a class="dropdown-item" href="service.html">Service</a></li>
+    <li><a class="dropdown-item" href="repair.html">Repairs</a></li>
+  </ul>
+
+</div>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registration.html">Register</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+      </span>
+    </div>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+  <div class="container">
+
+<div class="row">
+<div class="col-3">
+
+ 
+  
+    
+  
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><a href="#" id = "newcollection" onclick=choiceSelected("newcollection")>New Collection</a></li>
+	
+    <li class="list-group-item"><a href="#" id = "forher" onclick=choiceSelected("forher")>For Her</a></li>
+    <li class="list-group-item"><a href="#" id = "forhim" onclick=choiceSelected("forhim")>For Him</a></li>
+  </ul>
+
+</div>
+
+<div class="col-9">
+<div class="card border-light">
+  
+    <div class="row g-0">
+    <div class="col-md-100%">
+  
+  <img src="collectionls.jpg" style="height:250px; width:50%" alt="Image of collectionls" id = "pic">
+ 
+    <h5 class="card-title" id = "title">Our Collections</h5>
+    <p class="card-text" id = "content">Handcrafted swiss quality time pieces made in the heart of Edinburgh.  Our collection comprises of bespoken watches for all, from classical clock faces to more unusual personalised pieces. </p>
+    
+
+
+    </div>
+	</div>
+	</div>
+	</div>
+
+	</div>
+  <!-- Footer -->
+<footer class="bg-body-tertiary text-center mt-2">
+
+
+
+  <div class="text-centre p-3" style="background-color: #000000; color: white; width: 100%; position: absolute;
+    left: 0; right: 0; bottom: 0;">
+    MK Time ||
+    <a class="text-reset fw-bold" href="mailto:mk@time.co.uk">mk@time.co.uk</a>
+  </div>
+  
+</footer>
+<!-- Footer -->
+
+
+  
+  <script>
+  function choiceSelected(choice){
+			console.log(choice);
+			//document.getElementById("yourchoicetext").innerHTML = "Your Choice: " + choice;
+			if (choice == "newcollection"){
+			document.getElementById("pic").src = "newcollection.jpeg"
+			document.getElementById("title").innerHTML = "New Collection";
+			document.getElementById("content").innerHTML = "Our new collection for Spring 2024 is based on the colours of spring and can be colour coded to fit your tone.  We offer a wide range of changable strapes for all the colours of spring.";}
+			if (choice == "forher"){
+			document.getElementById("pic").src = "womenswatch.jpeg"
+			document.getElementById("title").innerHTML = "For Her";
+			document.getElementById("content").innerHTML = "Our watches are designed with women in mind and can be resized and taylored to your needs and style.";}
+			if (choice == "forhim"){
+			document.getElementById("pic").src = "menswatches.jpeg"
+			document.getElementById("title").innerHTML = "For Him";
+			document.getElementById("content").innerHTML = "Our watches are designed with men in mind and can be resized and taylored to your needs and style.";}
+			
+			}
+			
+	</script>		
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  </body>
+  </html>

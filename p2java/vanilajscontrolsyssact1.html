@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Activity 1</h1>
+<p>part 2</p>
+<p id="aa"></p>
+<p id="bb"></p>
+<p id="cc"></p>
+
+
+<script>
+// check if the numbers os eual or not
+let a = prompt("Enter a number: ");
+let b = prompt("Enter a number: ");
+let c = prompt("Enter a number: ");
+
+
+// check if numbers match
+if (a == b && b == c) {
+    console.log("All numbers are equal");
+	document.getElementById("aa").innerHTML = "All numbers are equal";
+	
+}
+// check if numbers do not match
+ else if (a != b && b != c && a != c) {
+      console.log("All numbers are different ");
+	document.getElementById("bb").innerHTML = "All numbers are different";
+ 
+}
+
+else  {
+      console.log("Neither all are equal or different 1");
+	document.getElementById("bb").innerHTML = "Neither all are equal or different";
+ 
+}
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

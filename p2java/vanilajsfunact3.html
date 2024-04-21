@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Activity Arrays</h1>
+<p>part 1</p>
+<p id="aa"></p>
+<p id="bb"></p>
+<p id="cc"></p>
+
+
+<script>
+
+// get number
+
+let n = parseInt( prompt("Enter a number: "));
+
+
+
+
+// define function
+function isPrime(num) {
+if (num <=1) return false;
+if (num ===2) return true;
+
+//loop for numbers greater than 2
+for (let i=2; i<num; i++) {
+
+if (num % i === 0){
+return false;
+
+}
+}
+return true;
+
+}
+
+
+
+if (isPrime(n)) {
+	
+
+console.log(n + ' is a prime number');
+
+}
+else {
+
+console.log(n + ' is not a prime number');
+}
+
+	
+	
+
+
+ 
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

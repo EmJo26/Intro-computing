@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+   <meta charset="utf-8">
+  <head>
+  
+	<title>Rock Paper Scissor Game </title>
+  
+  </head>
+	<body>
+	
+	<h1>Rock, Paper, Scissors Game!</h1>
+
+
+		<button type="button" class="btn btn-primary" id = "rock" onclick=choiceSelected("rock")>Rock</button>
+		<button type="button" class="btn btn-primary" id = "paper" onclick=choiceSelected("paper")>Paper</button>
+		<button type="button" class="btn btn-primary" id = "scissors" onclick=choiceSelected("scissors")>Scissors</button>
+		
+		
+		<div id = "game">
+		<h2 class="gametext" id="yourchoicetext">Your Choice:</h2>
+		<h2 class="gametext" id="computertext">Computer Choice:</h2>
+		<h2 class="gametext" id="Resulttext">Result:</h2>
+		
+		
+		
+		
+		
+		</div>
+	
+		
+		<script>
+		
+		function choiceSelected(choice){
+			console.log(choice);
+			document.getElementById("yourchoicetext").innerHTML = "Your Choice: " + choice;
+			let computerChoice = Math.floor(Math.random() * 3);
+			console.log(computerChoice);
+			
+			if (computerChoice == 0){
+				document.getElementById("computertext").innerHTML = "Computer Choice: rock";
+				if (choice == "rock"){
+					document.getElementById("Resulttext").innerHTML = "Result: draw";
+				}
+				if (choice == "paper"){
+					document.getElementById("Resulttext").innerHTML = "Result: You Win";
+				}
+				if (choice == "scissors"){
+					document.getElementById("Resulttext").innerHTML = "Result: You Lose";
+				}
+			}
+			if (computerChoice == 1){
+				document.getElementById("computertext").innerHTML = "Computer Choice: paper";
+				if (choice == "rock"){
+					document.getElementById("Resulttext").innerHTML = "Result: You Lose";
+				}
+				if (choice == "paper"){
+					document.getElementById("Resulttext").innerHTML = "Result: draw";
+				}
+				if (choice == "scissors"){
+					document.getElementById("Resulttext").innerHTML = "Result: You Win";
+				}
+			}
+			if (computerChoice == 2){
+				document.getElementById("computertext").innerHTML = "Computer Choice: scissors";
+				if (choice == "rock"){
+					document.getElementById("Resulttext").innerHTML = "Result: You Win";
+				}
+				if (choice == "paper"){
+					document.getElementById("Resulttext").innerHTML = "Result: You Lose";
+				}
+				if (choice == "scissors"){
+					document.getElementById("Resulttext").innerHTML = "Result: draw";
+				}
+			}
+		}
+		
+		//onclick part
+		//function for the senarios 
+		//The Winning Rules are as follows: 
+		//Rock smashes Scissors.
+		//Paper covers Rock.
+		//Scissors cut Paper.
+		
+		
+		
+		
+		
+		</script>
+	</body>
+	
+</html>	
